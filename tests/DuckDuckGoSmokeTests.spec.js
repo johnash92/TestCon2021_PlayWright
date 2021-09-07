@@ -3,5 +3,5 @@ const { test, expect } = require('@playwright/test');
 test('Check that page and logo loads', async ({ page }) => {
   await page.goto('https://duckduckgo.com/');
   const isLogoVisible = await page.isVisible('#logo_homepage_link');
-  await expect(title.isVisible()).toBe(true);
+  await expect(isLogoVisible).toBe(true);
 });
